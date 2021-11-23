@@ -9,7 +9,10 @@ function App() {
   return (
     <div className={styles.App}>
         <header className={styles.header}>
-            head banner
+            <div className={styles.box}>
+                <div className={styles.boxleft}>DHPM</div>
+                <div className={styles.boxright}>Bread Navi here</div>
+            </div>
         </header>
         <Content className={styles.content}>
             content

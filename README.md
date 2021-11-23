@@ -1,3 +1,5 @@
+# Assignment for Web Application Week, a Webpage to display products of a Swiss Type Lathe Work Shop.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

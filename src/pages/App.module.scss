@@ -3,35 +3,65 @@
   min-height: 100vh;
   padding: 24px;
   flex-direction: column;
-  ackground: #fff;
-  .content{
+  background: #fff;
+
+  .content {
     flex: 1;
+    background: #2fff00;
   }
-  .header{
+
+  .mainHeader {
+    color: #f2f2f2;
+  }
+  .subHeader {
     float: left;
-    width: 120px;
+    width: 100%;
     height: 31px;
     margin: 16px 24px 16px 0;
     background: rgba(255, 255, 255, 0.3);
+
+
+    .box {
+
+
+      .boxRight {
+        float: right;
+      }
+
+    }
   }
-  .footer{
+
+  .footer {
     text-align: center;
-    padding: 20px 0px;
+    padding: 20px 0;
     color: #555;
     background: rgba(255, 255, 255, 0.3);
     border-top: 1px solid #f2f2f2;
-    p{
-      padding: 2px 0px;
-      margin: 0px;
+
+    p {
+      padding: 2px 0;
+      margin: 0;
+    }
+
+    p:hover {
+      padding-left: 1em;
+      background-color: #fff;
+      box-shadow: 0 16px 60px 0 rgba(0, 0, 0, .08), 0 6px 12px 0 rgba(0, 0, 0, .1);
     }
   }
 }
+
+.box {
+
+}
+
 
 .site-layout-content {
   min-height: 280px;
   padding: 24px;
   background: #fff;
 }
+
 #components-layout-demo-top .logo {
   float: left;
   width: 120px;
@@ -39,6 +69,7 @@
   margin: 16px 24px 16px 0;
   background: rgba(255, 255, 255, 0.3);
 }
+
 .ant-row-rtl #components-layout-demo-top .logo {
   float: right;
   margin: 16px 0 16px 24px;

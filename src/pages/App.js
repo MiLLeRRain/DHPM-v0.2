@@ -1,5 +1,6 @@
-import React, {Component} from "react";
+import React from "react";
 import styles from './App.module.scss';
+// eslint-disable-next-line
 import {Layout, Menu, Breadcrumb} from 'antd';
 import {Content, Footer, Header} from "antd/es/layout/layout";
 import { useRoutes, A } from "hookrouter";
@@ -15,9 +16,11 @@ function App() {
     const routeResult = useRoutes(routes);
     return (
         <div className={styles.App}>
+            {/* Head Section */}
             <Header>
                 <h1 className={styles.mainHeader}>DHPM</h1>
             </Header>
+            {/* Nav Bar */}
             <header className={styles.subHeader}>
                 <div className={styles.box}>
                     <div className={styles.boxRight}>
@@ -35,7 +38,9 @@ function App() {
                     </div>
                 </div>
             </header>
-            <Content>
+
+            {/* Content Section */}
+            <Content className={styles.content}>
                 {routeResult || <NoPageFound />}
                 {/*<Routes>*/}
                 {/*    <Route path="/" element={<HomePage/>}/>*/}
@@ -44,6 +49,8 @@ function App() {
                 {/*    <Route path="/contact" element={<ContactPage/>}/>*/}
                 {/*</Routes>*/}
             </Content>
+
+            {/* Footer Section */}
             <Footer>
                 <p><strong>@2021 DHPM</strong></p>
                 <p>By L.H.</p>

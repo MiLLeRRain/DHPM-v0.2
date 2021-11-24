@@ -91,7 +91,7 @@ function render(a) {
     const cosineRotation = Math.cos(rotation); // Cosine of the rotation
 
     // Loop through the dots array and draw every dot
-    for (var i = 0; i < dots.length; i++) {
+    for (let i = 0; i < dots.length; i++) {
         dots[i].draw(sineRotation, cosineRotation);
     }
 

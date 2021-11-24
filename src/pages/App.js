@@ -2,8 +2,6 @@ import React, {Component} from "react";
 import styles from './App.module.scss';
 import {Layout, Menu, Breadcrumb} from 'antd';
 import {Content, Footer, Header} from "antd/es/layout/layout";
-import {Link, Route, Routes} from "react-router-dom";
-import ReactDOM from "react-dom";
 import { useRoutes, A } from "hookrouter";
 import routes from "../utils/router";
 import NoPageFound from "./NoPageFound/NoPageFound";

@@ -51,10 +51,21 @@
   }
 }
 
+.selected {
+  color: #2fff00;
+  padding-bottom: 5px;
+  border-bottom: 1.5px solid #3178ec;
+}
+
 .box {
 
 }
 
+//Canvas use
+canvas {
+  width:98vmin;
+  height:98vmin;
+}
 
 .site-layout-content {
   min-height: 280px;

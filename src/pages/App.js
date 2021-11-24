@@ -1,62 +1,50 @@
 import React, {Component} from "react";
 import styles from './App.module.scss';
-import {Button} from "antd";
 import {Layout, Menu, Breadcrumb} from 'antd';
 import {Content, Footer, Header} from "antd/es/layout/layout";
 import {Link, Route, Routes} from "react-router-dom";
-import HomePage from "./HomePage"
-import ProductPage from "./ProductPage"
-import ProductDetail from "./ProductDetail"
-import ContactPage from "./ContactPage"
+import ReactDOM from "react-dom";
+import { useRoutes, A } from "hookrouter";
+import routes from "../utils/router";
+import NoPageFound from "./NoPageFound/NoPageFound";
+// import HomePage from "./HomePage"
+// import ProductPage from "./ProductPage"
+// import ProductDetail from "./ProductDetail"
+// import ContactPage from "./ContactPage"
 import {HomeOutlined, AntDesignOutlined, ContactsOutlined} from "@ant-design/icons";
 
-
-// function HomeOutlined() {
-//     return <Link to="/">Home</Link>;
-// }
-//
-// function ProductOutLined() {
-//     return <Link to="/product">Product</Link>;
-// }
-//
-// function ContactOutLined() {
-//     return <Link to="/contact">Contact</Link>;
-// }
-
-
 function App() {
+    const routeResult = useRoutes(routes);
     return (
         <div className={styles.App}>
             <Header>
-                <div className={styles.mainHeader}>DHPM</div>
+                <h1 className={styles.mainHeader}>DHPM</h1>
             </Header>
             <header className={styles.subHeader}>
                 <div className={styles.box}>
                     <div className={styles.boxRight}>
                         <Breadcrumb>
                             <Breadcrumb.Item href="">
-                                <Link to="/"><HomeOutlined/></Link>
+                                <A href="/"><HomeOutlined/></A>
                             </Breadcrumb.Item>
                             <Breadcrumb.Item href="">
-                                <Link to="/product"><AntDesignOutlined /> PRODUCTS</Link>
+                                <A href="/product"><AntDesignOutlined /> PRODUCTS</A>
                             </Breadcrumb.Item>
                             <Breadcrumb.Item href="">
-                                <Link to="/contact"><ContactsOutlined /> CONTACTS</Link>
+                                <A href="/contact"><ContactsOutlined /> CONTACTS</A>
                             </Breadcrumb.Item>
                         </Breadcrumb>
-                        {/*<Link to="/">Home</Link>*/}
-                        {/*<Link to="/product">Product</Link>*/}
-                        {/*<Link to="/contact">Contact</Link>;*/}
                     </div>
                 </div>
             </header>
             <Content>
-                <Routes>
-                    <Route path="/" element={<HomePage/>}/>
-                    <Route path="/product" element={<ProductPage/>}/>
-                    <Route path="/product/:id" element={<ProductDetail/>}/>
-                    <Route path="/contact" element={<ContactPage/>}/>
-                </Routes>
+                {routeResult || <NoPageFound />}
+                {/*<Routes>*/}
+                {/*    <Route path="/" element={<HomePage/>}/>*/}
+                {/*    <Route path="/product" element={<ProductPage/>}/>*/}
+                {/*    <Route path="/product/:id" element={<ProductDetail/>}/>*/}
+                {/*    <Route path="/contact" element={<ContactPage/>}/>*/}
+                {/*</Routes>*/}
             </Content>
             <Footer>
                 <p><strong>@2021 DHPM</strong></p>

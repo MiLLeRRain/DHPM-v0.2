@@ -1,5 +1,7 @@
 import React from "react";
+
 class NonExistentPage extends React.Component {
+
     render() {
         return (
             <div>
@@ -9,4 +11,5 @@ class NonExistentPage extends React.Component {
         );
     }
 }
+
 export default NonExistentPage;

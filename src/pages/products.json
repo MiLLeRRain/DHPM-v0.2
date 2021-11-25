@@ -1,0 +1,42 @@
+{
+  "code": 200,
+  "msg": "Request responded.",
+  "data": [
+    {
+      "id": 1,
+      "title": "PRODUCT 1",
+      "loc": "p1",
+      "description": "description 1"
+    },
+    {
+      "id": 2,
+      "title": "PRODUCT 2",
+      "loc": "p2",
+      "description": "description 2"
+    },
+    {
+      "id": 3,
+      "title": "PRODUCT 3",
+      "loc": "p3",
+      "description": "description 3"
+    },
+    {
+      "id": 4,
+      "title": "PRODUCT 4",
+      "loc": "p4",
+      "description": "description 4"
+    },
+    {
+      "id": 5,
+      "title": "PRODUCT 5",
+      "loc": "p5",
+      "description": "description 5"
+    },
+    {
+      "id": 6,
+      "title": "PRODUCT 6",
+      "loc": "p6",
+      "description": "description 6"
+    }
+  ]
+}

@@ -17,54 +17,19 @@
     float: left;
     width: 98%;
     margin: 10px auto;
-    background: rgba(255, 255, 255, 0.3);
-
 
     .box {
-
-
       .boxRight {
         float: right;
       }
-
     }
   }
-
-  .footer {
-    text-align: center;
-    padding: 20px 0;
-    color: #555;
-    background: rgba(255, 255, 255, 0.3);
-    border-top: 1px solid #f2f2f2;
-
-    p {
-      padding: 2px 0;
-      margin: 0;
-    }
-
-    p:hover {
-      padding-left: 1em;
-      background-color: #fff;
-      box-shadow: 0 16px 60px 0 rgba(0, 0, 0, .08), 0 6px 12px 0 rgba(0, 0, 0, .1);
-    }
-  }
-}
-
-.selected {
-  color: #2fff00;
-  padding-bottom: 5px;
-  border-bottom: 1.5px solid #3178ec;
 }
 
 .box {
 
 }
 
-//Canvas use
-canvas {
-  width:98vmin;
-  height:98vmin;
-}
 
 .site-layout-content {
   min-height: 280px;

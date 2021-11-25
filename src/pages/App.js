@@ -7,7 +7,7 @@ import { useRoutes, A } from "hookrouter";
 import routes from "../utils/router";
 import NoPageFound from "./NoPageFound/NoPageFound";
 // import HomePage from "./HomePage"
-// import ProductPage from "./ProductPage"
+// import Index from "./Index"
 // import ProductDetail from "./ProductDetail"
 // import ContactPage from "./ContactPage"
 import {HomeOutlined, AntDesignOutlined, ContactsOutlined} from "@ant-design/icons";
@@ -25,7 +25,7 @@ function App() {
             <header className={styles.subHeader}>
                 <div className={styles.box}>
                     <div className={styles.boxRight}>
-                        <Breadcrumb>
+                        <Breadcrumb style={{ margin: '16px 0' }}>
                             <Breadcrumb.Item href="">
                                 <A href="/"><HomeOutlined/></A>
                             </Breadcrumb.Item>
@@ -43,18 +43,11 @@ function App() {
             {/* Content Section */}
             <Content className={styles.content}>
                 {routeResult || <NoPageFound />}
-                {/*<Routes>*/}
-                {/*    <Route path="/" element={<HomePage/>}/>*/}
-                {/*    <Route path="/product" element={<ProductPage/>}/>*/}
-                {/*    <Route path="/product/:id" element={<ProductDetail/>}/>*/}
-                {/*    <Route path="/contact" element={<ContactPage/>}/>*/}
-                {/*</Routes>*/}
             </Content>
 
             {/* Footer Section */}
-            <Footer>
-                <p><strong>@2021 DHPM</strong></p>
-                <p>By L.H.</p>
+            <Footer style={{ textAlign: 'center' }}>
+                <p><strong>DHPM @2021</strong> - Created By L.H.</p>
             </Footer>
         </div>
     );

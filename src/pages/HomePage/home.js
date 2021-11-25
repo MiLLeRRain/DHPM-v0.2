@@ -3,7 +3,7 @@ import styles from "./home.module.scss";
 import Meta from "antd/es/card/Meta";
 import {Card} from "antd";
 // import the product list components
-import ProductList from "../../components/ProductList";
+import ProductList from "../../components/ProductList/productList";
 import ProductData from "../products.json";
 
 

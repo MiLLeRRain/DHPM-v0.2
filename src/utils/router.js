@@ -1,7 +1,7 @@
 import React from "react";
-import Home from "../pages/HomePage";
+import Home from "../pages/HomePage/home";
 import Contact from "../pages/ContactPage";
-import Product from "../pages/ProductPage";
+import Product from "../pages/ProductPage/productPage";
 import ProductDetail from "../pages/ProductDetail"
 
 const routes = {

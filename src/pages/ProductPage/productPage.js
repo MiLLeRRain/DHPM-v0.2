@@ -7,7 +7,7 @@ import ProductList from "../../components/ProductList/productList";
 import ProductData from "../products.json";
 
 const contentStyle = {
-    height: '160px',
+    height: '200px',
     color: '#fff',
     lineHeight: '160px',
     textAlign: 'center',
@@ -25,8 +25,8 @@ function ProductPage() {
         {/* Show case */}
         <section className={styles.showcase}>
             <Row>
-                <Col span={6}>
-                    <Carousel autoplay style={{width: '280px'}}>
+                <Col span={8}>
+                    <Carousel autoplay style={{width: '350px'}}>
                         {
                             a && a.map(function (num) {
                                 return <div>
@@ -35,8 +35,8 @@ function ProductPage() {
                                         <img style={{
                                             borderRadius: '6px',
                                             alignSelf: 'center',
-                                            width: '280px',
-                                            height: '160px',
+                                            width: '350px',
+                                            height: '200px',
                                             resizeMode: 'contain'
                                         }} alt={num.title} src={require('../../assets/' + num + '.png').default}/>
                                     </h3>

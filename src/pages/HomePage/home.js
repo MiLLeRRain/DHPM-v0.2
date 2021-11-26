@@ -16,7 +16,7 @@ const HomePage = () => (
             <Card
                 style={{borderRadius: 10}}
                 cover={<img alt="example" src={require("../../assets/homePic.png").default}/>}
-                actions={[<a>操作一</a>, <a>操作二</a>]}
+                // actions={[<a>act1</a>, <a>act2</a>]}
             >
                 <Meta title={<div className={styles.title}>COMPANY INFO</div>}
                       description="More description"/>

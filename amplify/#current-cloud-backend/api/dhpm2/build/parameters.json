@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "dhpm2",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-dhpm2-dev-161707-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/839cbc66a43b2a7603caee943616d7dc227ba88b"
+}

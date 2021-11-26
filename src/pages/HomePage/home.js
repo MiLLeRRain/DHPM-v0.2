@@ -15,7 +15,7 @@ const HomePage = () => (
         <section className={styles.intro}>
             <Card
                 style={{borderRadius: 10}}
-                cover={<img alt="example" src={require("../../assets/homePic.jpeg").default}/>}
+                cover={<img alt="example" src={require("../../assets/homePic.png").default}/>}
                 actions={[<a>操作一</a>, <a>操作二</a>]}
             >
                 <Meta title={<div className={styles.title}>COMPANY INFO</div>}

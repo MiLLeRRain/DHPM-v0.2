@@ -21,7 +21,6 @@ componentDidMount();
 
 function componentDidMount() {
     let script = document.createElement('script');
-    script.src = "./utils/canvas.js"
     script.class = "external-script"
     document.body.appendChild(script);
 }

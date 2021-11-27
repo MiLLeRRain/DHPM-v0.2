@@ -18,8 +18,8 @@ function App() {
         <div className={styles.App}>
             {/* Head Section */}
             <Header>
-                <h1 className={styles.mainHeader}><span>DHPM - precision manufacturing solution</span>
-                </h1>
+                <div className={styles.mainHeader}>DHPM - precision manufacturing solution
+                </div>
             </Header>
             {/* Nav Bar */}
             <header className={styles.subHeader}>

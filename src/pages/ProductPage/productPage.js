@@ -45,9 +45,11 @@ function ProductPage() {
                         }
                     </Carousel>
                 </Col>
-                <Col style={{marginTop: '10px'}}>
-                    <Meta title={<div>PRODUCT INFO</div>}
+                <Col span={8}>
+                    <div className={styles.subTitle}>
+                    <Meta title={<div>CAPABILITY INFO</div>}
                           description="More description"/>
+                    </div>
                 </Col>
             </Row>
         </section>

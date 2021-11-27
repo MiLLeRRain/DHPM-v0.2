@@ -23,32 +23,36 @@ function ProductPage() {
     return <div className={styles.productpage}>
 
         {/* Show case */}
-        <section className={styles.showcase}>
+        <section>
             <Row>
-                <Col span={8}>
-                    <Carousel autoplay style={{width: '350px'}}>
-                        {
-                            a && a.map(function (num) {
-                                return <div>
-                                    <h3 style={contentStyle}>
-                                        {/**/}
-                                        <img style={{
-                                            borderRadius: '6px',
-                                            alignSelf: 'center',
-                                            width: '350px',
-                                            height: '200px',
-                                            resizeMode: 'contain'
-                                        }} alt={num.title} src={require('../../assets/' + num + '.png').default}/>
-                                    </h3>
-                                </div>;
-                            })
-                        }
-                    </Carousel>
+                <Col span={1}></Col>
+                <Col span={9}>
+                    <div className={styles.showcase}>
+                        <Carousel autoplay style={{width: '350px'}}>
+                            {
+                                a && a.map(function (num) {
+                                    return <div>
+                                        <h3 style={contentStyle}>
+                                            {/**/}
+                                            <img style={{
+                                                borderRadius: '6px',
+                                                alignSelf: 'center',
+                                                width: '350px',
+                                                height: '200px',
+                                                resizeMode: 'contain'
+                                            }} alt={num.title} src={require('../../assets/' + num + '.png').default}/>
+                                        </h3>
+                                    </div>;
+                                })
+                            }
+                        </Carousel>
+                    </div>
                 </Col>
-                <Col span={8}>
+                <Col span={12}>
                     <div className={styles.subTitle}>
-                    <Meta title={<div>CAPABILITY INFO</div>}
-                          description="More description"/>
+                        <Meta title={<div>CAPABILITY INFO</div>}
+                              description="Wohnzimmer so regungslos nettigkeit aufzulosen wu. Ubelnehmen bis kartoffeln stockwerke das des dazwischen gro aufgespart. Gegen haute ihr kommt vor euern. Ich hinter schwer bundel sog dir linken. Doch ja eile so warf du haar kein wenn zu. Du ja schlanken te weiterhin zerfasert besserung la ausblasen geheimnis.
+"/>
                     </div>
                 </Col>
             </Row>
@@ -62,7 +66,7 @@ function ProductPage() {
                 <h3>PRODUCTS LIST</h3>
             </div>
             {/* this is the place holding the product list component */}
-            <ProductList dataSource={ProductData.data} />
+            <ProductList dataSource={ProductData.data}/>
         </section>
 
     </div>;

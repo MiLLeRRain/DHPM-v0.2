@@ -1,7 +1,11 @@
-import React, {Component} from "react";
+import React from "react";
 
-export default class ContactPage extends Component{
-    render() {
-        return (<div>Contact PAGE HERE</div>);
-    }
+function ContactPage() {
+    return (
+        <div>
+            Contact PAGE HERE
+        </div>
+    );
 }
+
+export default ContactPage

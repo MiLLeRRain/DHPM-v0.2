@@ -25,7 +25,7 @@ function ProductPage() {
         {/* Show case */}
         <section>
             <Row>
-                <Col span={1}></Col>
+                <Col span={1}>  </Col>
                 <Col span={9}>
                     <div className={styles.showcase}>
                         <Carousel autoplay style={{width: '350px'}}>

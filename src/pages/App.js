@@ -6,10 +6,6 @@ import {Content, Footer, Header} from "antd/es/layout/layout";
 import { useRoutes, A } from "hookrouter";
 import routes from "../utils/router";
 import NoPageFound from "./NoPageFound/NoPageFound";
-// import HomePage from "./HomePage"
-// import Index from "./Index"
-// import ProductDetail from "./ProductDetail"
-// import ContactPage from "./ContactPage"
 import {HomeOutlined, AntDesignOutlined, ContactsOutlined} from "@ant-design/icons";
 
 function App() {

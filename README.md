@@ -1,5 +1,7 @@
 # Assignment for Web Application Week
 
+LINK: https://oldone.d2w3u37hryws5g.amplifyapp.com/
+
 "@ant-design/icons": "^4.7.0",
 "antd": "^4.17.1",
 "craco-less": "^1.20.0",
